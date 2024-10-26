@@ -1,0 +1,153 @@
+.goal-container {
+    padding: 20px; /* Padding around the container */
+    margin-left: 250px; /* Margin to avoid overlap with the sidebar */
+    height: calc(100vh - 40px); /* Full height minus padding */
+    background-color: #f4f7fa; /* Light background for the entire container */
+}
+
+.goal-header {
+    text-align: center; /* Center the goal header */
+    font-size: 36px; /* Larger font for the main header */
+    margin-bottom: 30px; /* Space below header */
+    color: #2b3d50; /* Darker blue-grey for better contrast */
+    font-weight: bold; /* Make header bold */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+.content-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    gap: 20px; /* Space between form and submitted data */
+    margin-top: 50px;
+    flex-wrap: wrap; /* Wrap items on small screens */
+}
+
+.form-container {
+    flex: 1; /* Allow the form to grow and fill space */
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px; /* More padding inside the form container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    transition: transform 0.2s; /* Transition for hover effect */
+}
+
+.form-container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.form-heading {
+    text-align: center; /* Center the form heading */
+    margin-bottom: 20px; /* Space below form heading */
+    font-size: 28px; /* Larger font for form heading */
+    color: #007bff; /* Blue color for form heading */
+}
+
+.goal-form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Stack form fields vertically */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+.form-control {
+    padding: 12px; /* Padding inside inputs */
+    border-radius: 8px; /* Rounded corners for inputs */
+    border: 2px solid #007bff; /* Blue border for inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition for border color and shadow */
+}
+
+.form-control:focus {
+    border-color: #28a745; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Focus shadow effect */
+}
+
+.goal-btn-primary {
+    background: linear-gradient(90deg, #071838, #03183f); /* Gradient background for button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px; /* Padding inside button */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background color transition */
+    font-size: 16px; /* Font size for buttons */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.goal-btn-primary:hover {
+    background: linear-gradient(90deg, #010818, #00060f); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.submitted-data {
+    flex: 1; /* Allow submitted data to grow */
+    padding: 20px; /* Padding around submitted data */
+    background-color: #ffffff; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.goal-item {
+    border: 1px solid #e0e0e0; /* Light border for each goal item */
+    border-radius: 10px; /* Rounded corners for goal items */
+    padding: 15px; /* Padding inside goal item */
+    margin-bottom: 15px; /* Space between goal items */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.goal-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.goal-description {
+    font-weight: bold; /* Bold text for goal description */
+    font-size: 18px; /* Larger font size for description */
+}
+
+.goal-buttons {
+    display: flex; /* Flexbox for button layout */
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
+.btn-secondary {
+    background: linear-gradient(90deg, #3a8129, #2a691a); /* Gradient for edit button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth background transition */
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(90deg, #236316, #236416); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-danger {
+    background: linear-gradient(90deg, #dc3545, #ff6b6b); /* Gradient for delete button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth background transition */
+    margin-right: 21rem;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(90deg, #c82333, #ff4d4d); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+
+    .form-container, .submitted-data {
+        width: 100%; /* Full width on small screens */
+    }
+}

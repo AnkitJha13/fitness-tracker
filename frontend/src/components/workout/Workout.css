@@ -1,0 +1,120 @@
+.workout-container {
+    padding: 20px; /* Padding around the container */
+    margin-left: 250px; /* Margin to avoid overlap with the sidebar */
+    height: calc(100vh - 40px); /* Full height minus padding */
+    background-color: #f0f2f5; /* Light grey background for the entire container */
+}
+
+.workout-header {
+    text-align: center; /* Center the workout header */
+    font-size: 36px; /* Larger font for the main header */
+    margin-bottom: 30px; /* Space below header */
+    color: #343a40; /* Darker color for better contrast */
+    font-weight: bold; /* Make header bold */
+}
+
+.content-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    gap: 20px; /* Space between form and submitted data */
+    margin-top: 20px;
+}
+
+.form-container {
+    flex: 1; /* Allow the form to grow and fill space */
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px; /* More padding inside the form container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.form-heading {
+    text-align: center; /* Center the form heading */
+    margin-bottom: 20px; /* Space below form heading */
+    font-size: 28px; /* Larger font for form heading */
+    color: #28a745; /* Green color for form heading */
+}
+
+.workout-form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Stack form fields vertically */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+.form-control {
+    padding: 12px; /* Padding inside inputs */
+    border-radius: 8px; /* Rounded corners for inputs */
+    border: 2px solid #007bff; /* Blue border for inputs */
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+.form-control:focus {
+    border-color: #28a745; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Focus shadow effect */
+}
+
+/* Updated button color for Post Workout */
+.workout-btn-primary {
+    background-color: #071838; /* Blue color for button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px; /* Padding inside button */
+    font-size: 16px; /* Font size for the button */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.workout-btn-primary:hover {
+    background-color: #010818; /* Darker blue shade on hover */
+}
+
+.submitted-data {
+    flex: 1; /* Allow the submitted data section to grow */
+    background-color: #ffffff; /* White background for submitted data */
+    padding: 30px; /* Padding inside the submitted data section */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.submitted-data h3 {
+    text-align: center; /* Center text for headings */
+    margin-bottom: 20px; /* Space below headings */
+    font-size: 24px; /* Font size for data heading */
+    color: #dc3545; /* Red color for data heading */
+}
+
+.workout-list {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between items */
+}
+
+.workout-item {
+    display: flex; /* Use flexbox for single line layout */
+    justify-content: space-between; /* Space items evenly */
+    padding: 15px; /* Padding around each item */
+    border-bottom: 1px solid #dee2e6; /* Light grey border at the bottom of each item */
+    margin-bottom: 10px; /* Space between workout items */
+    border-radius: 10px; /* Rounded corners for items */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    background-color: #f9f9f9; /* Light background for items */
+}
+
+.workout-item:hover {
+    background-color: #ece7e2; /* Light grey background on hover */
+}
+
+.workout-date {
+    font-weight: bold; /* Make date bold */
+    color: #343a40; /* Darker text for better visibility */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stack form and submitted data on smaller screens */
+    }
+}

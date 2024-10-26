@@ -1,0 +1,123 @@
+.post-activity-container {
+    padding: 20px; /* Padding around the container */
+    margin-left: 250px; /* Margin to avoid overlap with the sidebar */
+    height: calc(100vh - 40px); /* Full height minus padding */
+    background-color: #e9ecef; /* Light grey background for the entire container */
+}
+
+.activity-header {
+    text-align: center; /* Center the activity header */
+    font-size: 36px; /* Larger font for the main header */
+    margin-bottom: 30px; /* Space below header */
+    color: #2b3d50; /* Darker blue-grey for better contrast */
+    font-weight: bold; /* Make header bold */
+}
+
+.content-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    gap: 20px; /* Space between form and submitted data */
+    margin-top: 50px;
+}
+
+.form-container {
+    flex: 1; /* Allow the form to grow and fill space */
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px; /* More padding inside the form container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.form-heading {
+    text-align: center; /* Center the form heading */
+    margin-bottom: 20px; /* Space below form heading */
+    font-size: 28px; /* Larger font for form heading */
+    color: #28a745; /* Green color for form heading */
+}
+
+.activity-form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Stack form fields vertically */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+.form-control {
+    padding: 12px; /* Padding inside inputs */
+    border-radius: 8px; /* Rounded corners for inputs */
+    border: 2px solid #007bff; /* Blue border for inputs */
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+.form-control:focus {
+    border-color: #28a745; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Focus shadow effect */
+}
+
+/* Updated button color for Post Activity */
+.btn-primary {
+    background-color: #071838; /* New button color */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px; /* Padding inside button */
+    font-size: 16px; /* Font size for the button */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.btn-primary:hover {
+    background-color: #010818; /* Darker shade on hover */
+}
+
+.submitted-data {
+    flex: 1; /* Allow the submitted data section to grow */
+    background-color: #ffffff; /* White background for submitted data */
+    padding: 30px; /* Padding inside the submitted data section */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-height: 400px; /* Set a fixed maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+}
+
+.submitted-data::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.submitted-data::-webkit-scrollbar-thumb {
+    background-color: #28a745; /* Green color for the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.submitted-data::-webkit-scrollbar-thumb:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.submitted-data h3 {
+    text-align: center; /* Center text for headings */
+    margin-bottom: 20px; /* Space below headings */
+    font-size: 24px; /* Font size for data heading */
+    color: #dc3545; /* Red color for data heading */
+}
+
+.activity-item {
+    display: flex; /* Use flexbox for single line layout */
+    justify-content: space-between; /* Space items evenly */
+    padding: 15px; /* Padding around each item */
+    border-bottom: 1px solid #dee2e6; /* Light grey border at the bottom of each item */
+    margin-bottom: 10px; /* Space between activity items */
+    border-radius: 10px; /* Rounded corners for items */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    background-color: #f9f9f9;
+}
+
+.activity-item:hover {
+    background-color: #ece7e2; /* Light background on hover */
+}
+
+.activity-item p {
+    margin: 0; /* Remove default margin from paragraphs */
+    color: #22262c; /* Dark color for text */
+    font-size: 16px; /* Font size for activity items */
+}

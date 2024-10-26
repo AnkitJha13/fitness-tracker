@@ -1,0 +1,129 @@
+.dashboard-container {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #f4f7fa;
+    min-height: 100vh;
+}
+
+.dashboard-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    /* margin-bottom: 30px; */
+    margin-top: 35px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    /* width: 21rem; */
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #0a328a;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 1.5rem;
+    color: #34495e;
+    font-weight: 600;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-calories {
+    background-color: #ffecd4;
+    color: #e67e22;
+}
+
+.card-distance {
+    background-color: #d7f3ef;
+    color: #1abc9c;
+}
+
+.card-steps {
+    background-color: #fae1e6;
+    color: #e74c3c;
+}
+
+.card-time {
+    background-color: #eaf3fc;
+    color: #3498db;
+}
+
+.card-achieved {
+    background-color: #eafae3;
+    color: #27ae60;
+}
+
+.card-not-achieved {
+    background-color: #fde9e1;
+    color: #e74c3c;
+}
+
+.charts-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.chart-container {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-wrapper {
+    height: 300px;
+}
+
+@media (max-width: 992px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .charts-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-wrapper {
+        height: 250px;
+    }
+}
